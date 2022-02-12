@@ -21,7 +21,13 @@ body {
 
 #hero-bot {
     background-color: #020202;
+    width: 50%;
     height: 600%;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border: 5px solid #F67571;
+    border-radius: 10%;
 }
 
 .type {
