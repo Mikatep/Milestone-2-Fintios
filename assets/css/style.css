@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+/*-------------------------------------------General styles*/
+
+body {
+    overflow-x: hidden;
+}
+
+/*-------------------------------------------Header*/
+
+#nav-bar {
+    background-color: #F67571;
+}
+
+#logo-image {
+    min-height: 100px;
+    width: 225px;
+}
+
+/*-------------------------------------------Hero*/
+
+#hero-bot {
+    background-color: #020202;
+    height: 500px;
+}
+
+/*-------------------------------------------Footer*/
+
+#footer-bar {
+    background-color: #F67571;
+    min-height: 110px;
+    font-family: "Roboto", sans-serif;
+}
