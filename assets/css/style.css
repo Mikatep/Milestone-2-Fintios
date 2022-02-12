@@ -21,9 +21,32 @@ body {
 
 #hero-bot {
     background-color: #020202;
-    height: 500px;
+    height: 600%;
 }
 
+.type {
+    font-family: monospace;
+    font-size: 300%;
+    color:#0000;
+    background:
+      linear-gradient(-90deg,#F67571 5px,#0000 0) 10px 0,
+      linear-gradient(#fff 0 0) 0 0;
+    background-size:calc(var(--n)*1ch) 200%;
+    -webkit-background-clip:padding-box,text;
+    background-clip:padding-box,text;
+    background-repeat:no-repeat;
+    animation: 
+      b .5s infinite steps(1),   
+      t calc(var(--n)*.1s) steps(var(--n)) forwards;
+  }
+  @keyframes t{
+    from {background-size:0 200%}
+    from {width: 15% }
+    to {width: 100%}
+  }
+  @keyframes b{
+    50% {background-position:0 -100%,0 0}
+  }
 /*-------------------------------------------Footer*/
 
 #footer-bar {
