@@ -47,6 +47,15 @@ body {
   @keyframes b{
     50% {background-position:0 -100%,0 0}
   }
+
+/*-------------------------------------------User-Data*/  
+
+#data-input {
+    background-color: #020202;
+    height: 500px;
+}
+
+
 /*-------------------------------------------Footer*/
 
 #footer-bar {
