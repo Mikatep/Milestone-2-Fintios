@@ -4,6 +4,7 @@
 
 body {
     overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
 }
 
 /*-------------------------------------------General styles*/
@@ -79,6 +80,9 @@ body {
     height: 500px;
 }
 
+#user-name {
+  color: #fff;
+}
 
 /*-------------------------------------------Footer*/
 
@@ -88,10 +92,19 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+#about, #social {
+  padding: 25px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+#social ul {
+  text-align: center;
+}
+
 .social-links li a i {
   padding-top: 35px;
   font-size:  25px;
-  text-align: center;
   color: #020202;
   transition: all 0.35s ease-in-out;
 }
