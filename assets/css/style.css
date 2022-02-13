@@ -107,6 +107,21 @@ body {
 
 /*-------------------------------------------User-Data*/  
 
+#btn-user-data {
+  color: #020202;
+  background-color: #F67571;
+}
+
+#index-form {
+  margin: auto;
+}
+
+label {
+  color: #fff;
+  font-size: 35px;
+  padding-right: 15px;
+}
+
 #data-input {
     background-color: #020202;
     height: 500px;
