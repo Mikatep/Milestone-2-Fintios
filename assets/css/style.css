@@ -122,8 +122,8 @@ body {
 #index-form {
   width: 75%;
   margin: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 label {
@@ -140,6 +140,32 @@ label {
 #user-name {
   color: #fff;
 }
+
+/*-------------------------------------------Categories section*/
+
+.categories-links {
+  font-size: 35px;
+  text-align: center;
+  margin: auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.categories-links >a {
+  background-color: #F67571;
+  color: #020202;
+  text-decoration: none;
+  padding: 15px;
+  border: solid 3px #F67571;
+  border-radius: 12px;
+}
+
+.categories-links >a:hover {
+  color: #fff;
+}
+
+
+
 
 /*-------------------------------------------Footer*/
 
