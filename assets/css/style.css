@@ -110,14 +110,20 @@ body {
 
 /*-------------------------------------------User-Data*/  
 
-#btn-user-data {
+.btn-user-data {
   color: #020202;
   background-color: #F67571;
+}
+
+.btn-user-data:hover {
+  color: #fff;
 }
 
 #index-form {
   width: 75%;
   margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 label {
@@ -126,9 +132,9 @@ label {
   padding-right: 15px;
 }
 
-#data-input {
+.data-input {
     background-color: #020202;
-    height: 500px;
+    height: auto;
 }
 
 #user-name {

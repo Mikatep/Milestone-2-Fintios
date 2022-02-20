@@ -41,24 +41,42 @@
         <div id="hero-background" class="row">
             <div id="hero-bot" class="row">
                 <div id="bot-screen" class="col-md-12">
-                    <span class="type" style="--n:128">Hi <span id="person-name"></span>! Nice to meet you!<br>
-                    Please select below what finantial ratio's category would you like to analyse today.
+                    <span class="type" style="--n:128"> We would really appreciate some feedback <br>
+                    and or suggestions to keep improving and growing our application. <br>
+                    You can use the form below to contact us.
                     </span>
                 </div>
             </div>
         </div>
     </section>
-    <section id="categories">
-        <div class="data-input">
-            <div class="row">
-                <div id="profitability" class="col-md-4"> Profitability</div>
-                <div id="efficiency" class="col-md-4"> Efficiency</div>
-                <div id="liquidity" class="col-md-4">Liquidity</div>
-            </div>
-            <div class="row">
-                <div id="gearing" class="col-md-6">Gearing</div>
-                <div id="shareholders" class="col-md-6">Shareholders</div>
-            </div>
+    <section id="user-data">
+        <div class="row data-input"> 
+            <form id="index-form">
+                <div class="form-group">
+                    <label for="data-name">Please input your Name or your Organization's Name</label>
+                    <input id="data-name" class="form-control mr-sm-2" type="text" placeholder="User's name" aria-label="Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Please select your Organzation's Industry</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Consulting and professional services</option>
+                    <option>Food Retail</option>
+                    <option>Hospitality</option>
+                    <option>Retail</option>
+                    <option>Student</option>
+                    <option>Other...</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="data-email">Please input your Email <Address></Address></label>
+                    <input id="data-email" class="form-control mr-sm-2" type="email" placeholder="User's email" aria-label="Email">
+                </div>
+                <div class="form-group">
+                    <label for="textarea"> Please input any extra information here </label>
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+            </form>
         </div>
     </section>
     <footer>
