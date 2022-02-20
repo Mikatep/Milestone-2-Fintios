@@ -22,6 +22,9 @@ body {
     nav {
       margin-left: 17px;
       margin-top: -30px;
+    } 
+    label {
+      font-size: 20px!important;
     }
 }
 
@@ -113,6 +116,7 @@ body {
 }
 
 #index-form {
+  width: 75%;
   margin: auto;
 }
 

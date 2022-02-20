@@ -51,10 +51,23 @@
     </section>
     <section id="user-data">
         <div id="data-input" class="row"> 
-            <form id="index-form" class="form-inline my-2 my-lg-0">
-                <label for="data-name">Please input your Name or your Organization's Name</label>
-                <input id="data-name" class="form-control mr-sm-2" type="text" placeholder="User's name" aria-label="Name">
-                <button id="btn-user-data" class="btn my-2 my-sm-0" type="submit">Submit</button>
+            <form id="index-form">
+                <div class="form-group">
+                    <label for="data-name">Please input your Name or your Organization's Name</label>
+                    <input id="data-name" class="form-control mr-sm-2" type="text" placeholder="User's name" aria-label="Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Please select your Organzation's Industry</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Hospitality</option>
+                    <option>Retail</option>
+                    <option>Food Retail</option>
+                    <option>Consulting and professional services</option>
+                    <option>Student</option>
+                    <option>Other...</option>
+                  </select>
+                </div>
+                <a id="btn-user-data" class="btn my-2 my-sm-0" href="categories.html">Submit</a>
             </form>
         </div>
     </section>
