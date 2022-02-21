@@ -7,7 +7,23 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-/*-------------------------------------------General styles*/
+.form-headings {
+  color: #fff;
+}
+
+.label-1 {
+  color: #fff;
+  font-size: 35px;
+  padding-right: 15px;
+}
+
+.label-2 {
+  color: #fff;
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+/*-------------------------------------------Media queries*/
 
 @media(min-width: 768px) {
   .type {
@@ -129,12 +145,6 @@ body {
   padding-bottom: 50px;
 }
 
-label {
-  color: #fff;
-  font-size: 35px;
-  padding-right: 15px;
-}
-
 .data-input {
     background-color: #020202;
     margin-top: 0;
@@ -167,6 +177,11 @@ label {
 
 .categories-links >a:hover {
   color: #F67571;
+}
+
+.ratio-form {
+  width: 75%;
+  margin: auto;
 }
 
 /*-------------------------------------------Footer*/
