@@ -184,6 +184,12 @@ body {
   margin: auto;
 }
 
+/*-------------------------------------------Liquidity.index*/
+
+#liquidity-ratios {
+  background-color: #020202;
+}
+
 /*-------------------------------------------Footer*/
 
 #footer-bar {

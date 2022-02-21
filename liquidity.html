@@ -50,38 +50,38 @@
         </div>
     </section>
     <section>
-        <div class="row">
-            <div id="current-ratio" class="col-md-3">
+        <div id="liquidity-ratios" class="row">
+            <div id="current-ratio" class="col-md-4">
                 <div class="row data-input"> 
                     <form id="index-form">
                         <h2 class="form-headings">CURRENT RATIO</h2>
                         <div class="form-group">
                             <label class="label-2" for="current-assets">Current assets</label>
-                            <input id="current-assets" class="form-control mr-sm-2" type="number" placeholder="current assets" aria-label="current-assets">
+                            <input id="current-assets" class="form-control mr-sm-2" type="number" step=".01" placeholder="current assets" aria-label="current-assets">
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="current-liabilities">Current liabilities</label>
-                            <input id="current-liabilities" class="form-control mr-sm-2" type="number" placeholder="current liabilities" aria-label="current-liabilities">
+                            <input id="current-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="current liabilities" aria-label="current-liabilities">
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="current-result">Current Ratio Result</label>
-                            <input id="current-result" class="form-control mr-sm-2" type="number" placeholder="current result" aria-label="current-result">
+                            <input id="current-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="current result" aria-label="current-result">
                         </div>
                           <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div> 
-            <div id="acid-ratio" class="col-md-3">
+            <div id="acid-ratio" class="col-md-4">
                 <div class="row data-input"> 
                     <form id="index-form">
                         <h2 class="form-headings">ACID TEST RATIO</h2>
                         <div class="form-group">
                             <label class="label-2" for="acid-assets">Current assets</label>
-                            <input id="acid-assets" class="form-control mr-sm-2" type="number" placeholder="current assets" aria-label="current-assets">
+                            <input id="acid-assets" class="form-control mr-sm-2" type="number" step=".01" placeholder="current assets" aria-label="current-assets">
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="acid-liabilities">Current liabilities</label>
-                            <input id="acid-liabilities" class="form-control mr-sm-2" type="number" placeholder="current liabilities" aria-label="current-liabilities">
+                            <input id="acid-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="current liabilities" aria-label="current-liabilities">
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="acid-inventory">Inventory</label>
@@ -89,60 +89,32 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="acid-result">ACID Ratio Result</label>
-                            <input id="acid-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="rosf-result" aria-label="Email">
+                            <input id="acid-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Acid ratio result" aria-label="Acid">
                         </div>
                           <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div>
-            <div id="net" class="col-md-3">
+            <div id="cash-ratio" class="col-md-4">
                 <div class="row data-input"> 
                     <form id="index-form">
-                        <h2 class="form-headings">NET</h2>
+                        <h2 class="form-headings">CASH RATIO</h2>
                         <div class="form-group">
-                            <label class="label-2" for="net-data-a">net-data-a</label>
-                            <input id="net-data-a" class="form-control mr-sm-2" type="text" placeholder="net-data-a" aria-label="Name">
+                            <label class="label-2" for="operating-cash">Operating cash flows</label>
+                            <input id="operating-cash" class="form-control mr-sm-2" type="number" step=".01" placeholder="operating cash flows" aria-label="operating cash">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="net-data-b">net-data-b<Address></Address></label>
-                            <input id="net-data-b" class="form-control mr-sm-2" type="email" placeholder="net-data-b" aria-label="Email">
+                            <label class="label-2" for="cash-liabilities">Current liabilities</label>
+                            <input id="cash-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="current liabilities" aria-label="cash liabilities">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="net-data-c">net-data-c<Address></Address></label>
-                            <input id="net-data-c" class="form-control mr-sm-2" type="email" placeholder="net-data-c" aria-label="Email">
-                        </div>
-                        <div class="form-group">
-                            <label class="label-2" for="net-result">NET result<Address></Address></label>
-                            <input id="net-result" class="form-control mr-sm-2" type="email" placeholder="net-result" aria-label="Email">
+                            <label class="label-2" for="cash-result">CASH Ratio Result</label>
+                            <input id="cash-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Cash ratio result" aria-label="Cash">
                         </div>
                           <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
-            </div> 
-            <div id="gross" class="col-md-3">
-                <div class="row data-input"> 
-                    <form id="index-form">
-                        <h2 class="form-headings">GROSS</h2>
-                        <div class="form-group">
-                            <label class="label-2" for="gross-data-a">gross-data-a</label>
-                            <input id="gross-data-a" class="form-control mr-sm-2" type="text" placeholder="gross-data-a" aria-label="Name">
-                        </div>
-                        <div class="form-group">
-                            <label class="label-2" for="gross-data-b">gross-data-b<Address></Address></label>
-                            <input id="gross-data-b" class="form-control mr-sm-2" type="email" placeholder="gross-data-b" aria-label="Email">
-                        </div>
-                        <div class="form-group">
-                            <label class="label-2" for="gross-data-c">gross-data-c<Address></Address></label>
-                            <input id="gross-data-c" class="form-control mr-sm-2" type="email" placeholder="gross-data-c" aria-label="Email">
-                        </div>
-                        <div class="form-group">
-                            <label class="label-2" for="gross-result">GROSS result<Address></Address></label>
-                            <input id="gross-result" class="form-control mr-sm-2" type="email" placeholder="gross-result" aria-label="Email">
-                        </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
-                    </form>
-                </div>
-            </div>              
+            </div>  
         </div>  
     </section>
     <footer>
