@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a315ab97c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Fintios</title>
+</head>
+<body>
+    <header>
+        <div id="nav-bar" class="row">
+            <div id="logo" class="col-md-4">
+                <a href="index.html"><img id="logo-image" src="assets/images/fintios-transparent-cut.png" alt="logo"></a>
+            </div>
+            <div class="col-md-8">
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul id="ul-nav" class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                              <a class="nav-name" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-name" href="categories.html">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-name" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="hero">
+        <div id="hero-background" class="row">
+            <div id="hero-bot" class="row">
+                <div id="bot-screen" class="col-md-12">
+                    <span class="type" style="--n:128"> Great selection <span id="person-name"></span>! <br>
+                    Please enter the required data in the correspondent data-box below. You will receive a personalized <br>
+                    feedback determined by the selected industry.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="shareholders-ratios" class="row">
+            <div id="dividend-payout" class="col-md-3">
+                <div class="row data-input"> 
+                    <form id="index-form">
+                        <h2 class="form-headings">Dividend Payout Ratio</h2>
+                        <div class="form-group">
+                            <label class="label-2" for="dividend-year">Dividend announced for the year</label>
+                            <input id="dividend-year" class="form-control mr-sm-2" type="number" step=".01" placeholder="Dividend announced for the year" aria-label="Dividend announced for the year">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="taxed-profit">Profit after tax</label>
+                            <input id="taxed-profit" class="form-control mr-sm-2" type="number" step=".01" placeholder="Profit after tax" aria-label="Profit after tax">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="preference">Preference dividend</label>
+                            <input id="preference" class="form-control mr-sm-2" type="number" step=".01" placeholder="Preference dividend" aria-label="Preference dividend">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="dividend-payout-result">Dividend Payout Ratio Result</label>
+                            <input id="dividend-payout-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Dividend Payout Ratio result" aria-label="Dividend Payout Ratioresult">
+                        </div>
+                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                    </form>
+                </div>
+            </div> 
+            <div id="dividend-yield" class="col-md-3">
+                <div class="row data-input"> 
+                    <form id="index-form">
+                        <h2 class="form-headings">Dividend Yield Ratio</h2>
+                        <div class="form-group">
+                            <label class="label-2" for="per-share">Dividend per share (net)</label>
+                            <input id="per-share" class="form-control mr-sm-2" type="number" step=".01" placeholder="Dividend per share (net)" aria-label="Dividend per share (net)">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="market-value">Market value per share</label>
+                            <input id="market-value" class="form-control mr-sm-2" type="number" step=".01" placeholder="Market value per share" aria-label="Market value per share">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="dividend-yield-result">Dividend Yield Ratio Result</label>
+                            <input id="dividend-yield-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Dividend Yield Ratio result" aria-label="Dividend Yield Ratio result">
+                        </div>
+                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                    </form>
+                </div>
+            </div> 
+            <div id="earnings-share" class="col-md-3">
+                <div class="row data-input"> 
+                    <form id="index-form">
+                        <h2 class="form-headings">Earnings per share</h2>
+                        <div class="form-group">
+                            <label class="label-2" for="taxed-profit-earnings">Profit after Tax</label>
+                            <input id="taxed-profit-earnings" class="form-control mr-sm-2" type="number" step=".01" placeholder="Profit after Tax" aria-label="Profit after Tax">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="earnings-preference">Preference dividend</label>
+                            <input id="earnings-preference" class="form-control mr-sm-2" type="number" step=".01" placeholder="Preference dividend" aria-label="Preference dividend">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="ordinary-shares">Number of Ordinary Shares</label>
+                            <input id="ordinary-shares" class="form-control mr-sm-2" type="number" step=".01" placeholder="Number of Ordinary Shares" aria-label="Number of Ordinary Shares">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="earnings-share-result">Earnings per share Result</label>
+                            <input id="earnings-share-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Earnings per share Result" aria-label="Earnings per share Result">
+                        </div>
+                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                    </form>
+                </div>
+            </div> 
+            <div id="price-ratio" class="col-md-3">
+                <div class="row data-input"> 
+                    <form id="index-form">
+                        <h2 class="form-headings">Price to earnings Ratio</h2>
+                        <div class="form-group">
+                            <label class="label-2" for="price-profit">Profit after tax</label>
+                            <input id="price-profit" class="form-control mr-sm-2" type="number" step=".01" placeholder="Profit after tax" aria-label="Profit after tax">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="price-preference">Preference dividends</label>
+                            <input id="price-preference" class="form-control mr-sm-2" type="number" step=".01" placeholder="Preference dividend" aria-label="Preference dividend">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="price-ordinary-shares">Number of Ordinary Shares</label>
+                            <input id="price-ordinary-shares" class="form-control mr-sm-2" type="number" step=".01" placeholder="Number of Ordinary Shares" aria-label="Number of Ordinary Shares">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="price-ratio-result">Price to earnings Ratio Result</label>
+                            <input id="price-ratio-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Price to earnings Ratio Result" aria-label="Price">
+                        </div>
+                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <footer>
+        <div id="footer-bar" class="row">
+            <div id="about" class="col-md-8">
+                <h3>About Us</h3>
+                <p>Fintios is the completely free specialized web application 
+                that calculates and analyses Financial ratios. The main aim of Fintios
+                is to make detailed financial information available to small business owners 
+                and those university students in fields related to finance and business.
+                </p>
+            </div>
+            <div id="social" class="col-md-4">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <p>Creator: Miriam Cordoba Capote</p>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/miriam-cordoba-capote-936a93225/" target="_blank">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">Linkedin link</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Mikatep" target="_blank">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">Github link</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

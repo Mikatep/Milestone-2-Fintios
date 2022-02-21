@@ -196,14 +196,16 @@ body {
   background-color: #020202;
 }
 
-/*-------------------------------------------Liquidity.index*/
+/*-------------------------------------------gearing.index*/
 
 #gearing-ratios {
   background-color: #020202;
 }
 
-.col-gearing {
-  width: 70%;
+/*-------------------------------------------shareholders.index*/
+
+#shareholders-ratios {
+  background-color: #020202;
 }
 
 
