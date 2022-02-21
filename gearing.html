@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a315ab97c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Fintios</title>
+</head>
+<body>
+    <header>
+        <div id="nav-bar" class="row">
+            <div id="logo" class="col-md-4">
+                <a href="index.html"><img id="logo-image" src="assets/images/fintios-transparent-cut.png" alt="logo"></a>
+            </div>
+            <div class="col-md-8">
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul id="ul-nav" class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                              <a class="nav-name" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-name" href="categories.html">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-name" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section id="hero">
+        <div id="hero-background" class="row">
+            <div id="hero-bot" class="row">
+                <div id="bot-screen" class="col-md-12">
+                    <span class="type" style="--n:128"> Great selection <span id="person-name"></span>! <br>
+                    Please enter the required data in the correspondent data-box below. You will receive a personalized <br>
+                    feedback determined by the selected industry.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="gearing-ratios" class="row">
+            <div id="gearing-ratio" class="col-md-6 col-gearing">
+                <div class="row data-input"> 
+                    <form id="index-form">
+                        <h2 class="form-headings">Gearing Ratio</h2>
+                        <div class="form-group">
+                            <label class="label-2" for="non-curli">Non Current Liabilities</label>
+                            <input id="non-curli" class="form-control mr-sm-2" type="number" step=".01" placeholder="Non Current Liabilities" aria-label="Non Current Liabilities">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="gearing-capital">Share Capital</label>
+                            <input id="gearing-capital" class="form-control mr-sm-2" type="number" step=".01" placeholder="Share Capital" aria-label="Gearing Capital">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="gearing-reserves">Reserves</label>
+                            <input id="gearing-reserves" class="form-control mr-sm-2" type="number" step=".01" placeholder="Reserves" aria-label="Gearing Reserves">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="long-liabilities">Long Term Liabilities</label>
+                            <input id="long-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="Long Term Liabilities" aria-label="Long Term Liabilities">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="gearing-result">Gearing Ratio Result</label>
+                            <input id="gearing-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Gearing result" aria-label="Gearing result">
+                        </div>
+                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                    </form>
+                </div>
+            </div> 
+            <div id="interest-cover-ratio" class="col-md-6 col-gearing">
+                <div class="row data-input"> 
+                    <form id="index-form">
+                        <h2 class="form-headings">Interest Cover Ratio</h2>
+                        <div class="form-group">
+                            <label class="label-2" for="cover-operating">Operating Profit</label>
+                            <input id="cover-operating" class="form-control mr-sm-2" type="number" step=".01" placeholder="Operating Profit" aria-label="cover operating">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="cover-payable">Interest Payable</label>
+                            <input id="cover-payable" class="form-control mr-sm-2" type="number" step=".01" placeholder="Interest Payable" aria-label="Interest Payable">
+                        </div>
+                        <div class="form-group">
+                            <label class="label-2" for="cover-result">Interest Cover Ratio Result</label>
+                            <input id="cover-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Interest Cover Ratio Result" aria-label="Cover">
+                        </div>
+                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <footer>
+        <div id="footer-bar" class="row">
+            <div id="about" class="col-md-8">
+                <h3>About Us</h3>
+                <p>Fintios is the completely free specialized web application 
+                that calculates and analyses Financial ratios. The main aim of Fintios
+                is to make detailed financial information available to small business owners 
+                and those university students in fields related to finance and business.
+                </p>
+            </div>
+            <div id="social" class="col-md-4">
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <p>Creator: Miriam Cordoba Capote</p>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/miriam-cordoba-capote-936a93225/" target="_blank">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            <span class="sr-only">Linkedin link</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Mikatep" target="_blank">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <span class="sr-only">Github link</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
