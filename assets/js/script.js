@@ -1,30 +1,30 @@
-/** Effects with Jquery */
+/** Event listener for all ratios buttons */
 
-$("#button-bounce").mouseenter(function() {
-    doBounce($(this), 3, '20px', 300);
-  });
-  
-  
-  function doBounce(element, times, distance, speed) {
-    for (i = 0; i < times; i++) {
-      element.animate({
-          marginTop: '-=' + distance
-        }, speed)
-        .animate({
-          marginTop: '+=' + distance
-        }, speed);
-    }
+document.addEventListener("DOMContentLoaded", function() {
+  let buttons = document.getElementsByTagName("button");
+
+  for (let button of buttons) {
+      button.addEventListener("click", function() {
+          if (this.getAttribute("data-type") === "submit") {
+              calculateGearing();
+          } 
+      });
   }
+})
 
-/** Functions ES6*/
-
-function getName() {
-
-    let name = document.getElementById("data-name").value;
-    document.getElementById("person-name").innerHTML = name;
+/** gearing.html ratios */
+/** Calculates the gearing ratio in gearing.html*/
     
-}
+const calculateGearing = (operand1, operand2, operand3, operand4,) => operand1 / (operand2 + operand3 + operand4);
+
+    let gearingResult = calculateGearing();
+
+/** Variables */
+let operand1 = document.getElementById("non-curli").innerText;
+let operand2 = document.getElementById("gearing-capital").innerText;
+let operand3 = document.getElementById("gearing-reserves").innerText;
+let operand4 = document.getElementById("long-liabilities").innerText;
+let
 
 
-    
 
