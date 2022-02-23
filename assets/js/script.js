@@ -23,10 +23,10 @@ let operand4 = document.getElementById("long-liabilities");
     
 function calculateGearing() {
 
-    a = parseInt(operand1.value)
-    b = parseInt(operand2.value)
-    c = parseInt(operand3.value)
-    d = parseInt(operand4.value)
+    a = parseFloat(operand1.value)
+    b = parseFloat(operand2.value)
+    c = parseFloat(operand3.value)
+    d = parseFloat(operand4.value)
     document.getElementById('gearing-result').value = a / (b + c + d);
 
     return false;  
