@@ -53,7 +53,7 @@
         <div id="gearing-ratios" class="row">
             <div id="gearing-ratio" class="col-md-6 col-gearing">
                 <div class="row data-input"> 
-                    <form id="index-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">Gearing Ratio</h2>
                         <div class="form-group">
                             <label class="label-2" for="non-curli">Non Current Liabilities</label>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="gearing-result">Gearing Ratio Result</label>
-                            <input id="gearing-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Gearing result" aria-label="Gearing result">
+                            <input id="gearing-result" class="form-control mr-sm-2" placeholder="Gearing result" aria-label="Gearing result">
                         </div>
                           <button type="submit" onclick="calculateGearing()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
@@ -81,7 +81,7 @@
             </div> 
             <div id="interest-cover-ratio" class="col-md-6 col-gearing">
                 <div class="row data-input"> 
-                    <form id="index-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">Interest Cover Ratio</h2>
                         <div class="form-group">
                             <label class="label-2" for="cover-operating">Operating Profit</label>
@@ -93,9 +93,9 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="cover-result">Interest Cover Ratio Result</label>
-                            <input id="cover-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Interest Cover Ratio Result" aria-label="Cover">
+                            <input id="cover-result" class="form-control mr-sm-2" placeholder="Interest Cover Ratio Result" aria-label="Cover">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateCover()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div>
