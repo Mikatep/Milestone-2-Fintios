@@ -68,10 +68,15 @@
                             <input id="preference" class="form-control mr-sm-2" type="number" step=".01" placeholder="Preference dividend" aria-label="Preference dividend">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="dividend-payout-result">Dividend Payout Ratio Result</label>
+                            <label class="label-2-result" for="dividend-payout-result">Dividend Payout Ratio Result</label>
                             <input id="dividend-payout-result" class="form-control mr-sm-2" placeholder="Dividend Payout Ratio result" aria-label="Dividend Payout Ratioresult">
                         </div>
-                          <button type="submit" onclick="calculateDividend()"  class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="dividend-feedback">Dividend Payout Feedback</label>
+                            <span id="dividend-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateDividend()"  class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="dividendFeedback()"  class="btn mb-2 btn-user-data">Feedback</button>
                     </form>
                 </div>
             </div> 

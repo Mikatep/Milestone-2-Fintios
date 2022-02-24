@@ -92,11 +92,11 @@ const coverFeedback = () => {
     let result2 = document.getElementById("cover-result");
     bbb = parseFloat(result2.value)
     if (bbb <= 1.99) {
-        document.getElementById("cover-feedback").innerHTML = "Your organization's Interest Cover Ratio is equal or less than 1, this indicates that your company can not meet its current interest payment obligations and, therefore, is not in good financial health.";
+        document.getElementById("cover-feedback").innerHTML = "Your organization's Interest Cover Ratio is equal or less than 1 (1.99), this indicates that your company can not meet its current interest payment obligations and, therefore, is not in good financial health.";
     } else if (bbb = 2 < 3) {
         document.getElementById("cover-feedback").innerHTML = "Your organization's Interest Cover Ratio is greater than 2, this is considered the minimum acceptable amount for a company that has solid, consistent revenues.";
     }
-    else if (bbb >= 3) {
+    else {
         document.getElementById("cover-feedback").innerHTML = "Your organization's Cover Ratio is greater than 3, Analysts prefer to see a coverage ratio of three or better, it's sign of a solid and profitable organization.";
     }
 }
@@ -110,6 +110,16 @@ function calculateDividend() {
     i = parseFloat(operand9.value)
     let dividendResult = document.getElementById("dividend-payout-result").value = (g / (h -i)) * 100;  
    }
+
+const dividendFeedback = () => {
+    let result3 = document.getElementById("dividend-payout-result");
+    ccc = parseFloat(result3.value)
+    if (ccc >= 0.30 <= 0.50) {
+        document.getElementById("dividend-feedback").innerHTML = "Your organization's Dividend Payout Ratio is between 30% and 50%, this is considered a healthy dividend payout.";
+    } else if (ccc >= 0.50) {
+        document.getElementById("dividend-feedback").innerHTML = "Your organization's Dividend Payout Ratio is greater than 50%, this is considered an unsustainable dividend payout since the company will have to pay 50% or more of the internal profit as dividend payout.";
+    }
+}
 
 /** Calculates the dividend yield ratio in shareholders.html*/
 
