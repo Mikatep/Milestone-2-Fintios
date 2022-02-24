@@ -29,6 +29,16 @@ let operand13 = document.getElementById("earnings-preference");
 let operand14 = document.getElementById("ordinary-shares");
 let operand15 = document.getElementById("market-value");
 let operand16 = document.getElementById("price-earnings");
+let operand17 = document.getElementById("inventory-held");
+let operand18 = document.getElementById("cost");
+let operand19 = document.getElementById("average-receivables");
+let operand20 = document.getElementById("credit-sales");
+let operand21 = document.getElementById("average-payables");
+let operand22 = document.getElementById("credit-purchase");
+let operand23 = document.getElementById("sales");
+let operand24 = document.getElementById("total-assets");
+let operand25 = document.getElementById("turnover-liabilities");
+
 
 
 /** gearing.html ratios */
@@ -90,7 +100,43 @@ function calculateEarnings() {
     let priceResult = document.getElementById("price-ratio-result").value = o / p;  
    }
 
-   q = parseFloat(operand17.value)
+/** efficiency.html ratios */
+/** Calculates the inventory holding period in efficiency.html*/
+
+function calculateInventory() {
+
+    q = parseFloat(operand17.value)
+    r = parseFloat(operand18.value)
+    let inventoryResult = document.getElementById("inventory-holding-result").value = (q / r) * 365;  
+   }
+
+/** Calculates the average period to settle trade receivables ratio in efficiency.html*/
+
+function calculateReceivables() {
+
+    s = parseFloat(operand19.value)
+    t = parseFloat(operand20.value)
+    let receivablesResult = document.getElementById("trade-settlement-result").value = (s / t) * 365;  
+   }
+
+/** Calculates the average period to settle trade payables ratio in efficiency.html*/
+
+function calculatePayables() {
+
+    u = parseFloat(operand21.value)
+    v = parseFloat(operand22.value)
+    let payablesResult = document.getElementById("trade-payables-result").value = (u / v) * 365;  
+   }
+
+/** Calculates the average turnover ratio in efficiency.html*/
+
+function calculateTurnover() {
+
+    w = parseFloat(operand23.value)
+    x = parseFloat(operand24.value)
+    y = parseFloat(operand25.value)
+    let turnoverResult = document.getElementById("turnover-result").value = w / (x -y);  
+   }
     
    
     

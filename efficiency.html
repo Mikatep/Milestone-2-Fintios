@@ -53,7 +53,7 @@
         <div id="efficiency-ratios" class="row">
             <div id="inventory-holding" class="col-md-3">
                 <div class="row data-input"> 
-                    <form class="general-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings"> Average Inventory Holding Period</h2>
                         <div class="form-group">
                             <label class="label-2" for="inventory-held">Average Inventories Held</label>
@@ -65,15 +65,15 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="inventory-holding-result">Inventory Holding Period Result</label>
-                            <input id="inventory-holding-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="inventory holding result" aria-label="inventory-holding-result">
+                            <input id="inventory-holding-result" class="form-control mr-sm-2" placeholder="inventory holding result" aria-label="inventory-holding-result">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateInventory()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div> 
             <div id="trade-receivables" class="col-md-3">
                 <div class="row data-input"> 
-                    <form class="general-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">Average Settlement Period for Trade Receivables</h2>
                         <div class="form-group">
                             <label class="label-2" for="average-receivables">Average Trade Receivables</label>
@@ -85,15 +85,15 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="trade-settlement-result">Trade Receivables Settlement Result</label>
-                            <input id="trade-settlement-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Trade Settlement Result" aria-label="Trades Settlement Result">
+                            <input id="trade-settlement-result" class="form-control mr-sm-2" placeholder="Trade Settlement Result" aria-label="Trades Settlement Result">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateReceivables()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div>
             <div id="trade-payables" class="col-md-3">
                 <div class="row data-input"> 
-                    <form class="general-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">Average Settlement Period for Trade Payables</h2>
                         <div class="form-group">
                             <label class="label-2" for="average-payables">Average Trade Payables</label>
@@ -105,15 +105,15 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="trade-payables-result">Trade Payables Settlement Result</label>
-                            <input id="trade-payables-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Trade Payables Result" aria-label="Trades Payables Result">
+                            <input id="trade-payables-result" class="form-control mr-sm-2" placeholder="Trade Payables Result" aria-label="Trades Payables Result">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculatePayables()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div> 
             <div id="turnover-ratio" class="col-md-3">
                 <div class="row data-input"> 
-                    <form class="general-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">Turnover Ratio</h2>
                         <div class="form-group">
                             <label class="label-2" for="sales">Sales Revenue</label>
@@ -129,9 +129,9 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="turnover-result">Turnover Ratio Result</label>
-                            <input id="turnover-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Turnover ratio result" aria-label="Turnover">
+                            <input id="turnover-result" class="form-control mr-sm-2" placeholder="Turnover ratio result" aria-label="Turnover">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateTurnover()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div>
