@@ -87,6 +87,19 @@ function calculateCover() {
     f = parseFloat(operand6.value)
     document.getElementById('cover-result').value = e / f;  
    }
+
+const coverFeedback = () => {
+    let result2 = document.getElementById("cover-result");
+    bbb = parseFloat(result2.value)
+    if (bbb <= 1.99) {
+        document.getElementById("cover-feedback").innerHTML = "Your organization's Interest Cover Ratio is equal or less than 1, this indicates that your company can not meet its current interest payment obligations and, therefore, is not in good financial health.";
+    } else if (bbb = 2 < 3) {
+        document.getElementById("cover-feedback").innerHTML = "Your organization's Interest Cover Ratio is greater than 2, this is considered the minimum acceptable amount for a company that has solid, consistent revenues.";
+    }
+    else if (bbb >= 3) {
+        document.getElementById("cover-feedback").innerHTML = "Your organization's Cover Ratio is greater than 3, Analysts prefer to see a coverage ratio of three or better, it's sign of a solid and profitable organization.";
+    }
+}
 /** shareholders.html ratios */
 /** Calculates the dividend payout ratio in shareholders.html*/
 

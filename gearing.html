@@ -97,10 +97,15 @@
                             <input id="cover-payable" class="form-control mr-sm-2" type="number" step=".01" placeholder="Interest Payable" aria-label="Interest Payable">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="cover-result">Interest Cover Ratio Result</label>
+                            <label class="label-2-result" for="cover-result">Interest Cover Ratio Result</label>
                             <input id="cover-result" class="form-control mr-sm-2" placeholder="Interest Cover Ratio Result" aria-label="Cover">
                         </div>
-                          <button type="submit" onclick="calculateCover()" class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="cover-feedback">Cover Ratio Feedback</label>
+                            <span id="cover-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateCover()" class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="coverFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
                     </form>
                 </div>
             </div>
