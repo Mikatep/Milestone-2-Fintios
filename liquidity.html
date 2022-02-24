@@ -53,7 +53,7 @@
         <div id="liquidity-ratios" class="row">
             <div id="current-ratio" class="col-md-4">
                 <div class="row data-input"> 
-                    <form class="general-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">CURRENT RATIO</h2>
                         <div class="form-group">
                             <label class="label-2" for="current-assets">Current assets</label>
@@ -65,15 +65,15 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="current-result">Current Ratio Result</label>
-                            <input id="current-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="current result" aria-label="current-result">
+                            <input id="current-result" class="form-control mr-sm-2" placeholder="current result" aria-label="current-result">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateCurrent()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div> 
             <div id="acid-ratio" class="col-md-4">
                 <div class="row data-input"> 
-                    <form class="general-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">ACID TEST RATIO</h2>
                         <div class="form-group">
                             <label class="label-2" for="acid-assets">Current assets</label>
@@ -89,15 +89,15 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="acid-result">ACID Ratio Result</label>
-                            <input id="acid-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Acid ratio result" aria-label="Acid">
+                            <input id="acid-result" class="form-control mr-sm-2" placeholder="Acid ratio result" aria-label="Acid">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateAcid()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div>
             <div id="cash-ratio" class="col-md-4">
                 <div class="row data-input"> 
-                    <form class="general-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">CASH RATIO</h2>
                         <div class="form-group">
                             <label class="label-2" for="operating-cash">Operating cash flows</label>
@@ -109,9 +109,9 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="cash-result">CASH Ratio Result</label>
-                            <input id="cash-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Cash ratio result" aria-label="Cash">
+                            <input id="cash-result" class="form-control mr-sm-2" placeholder="Cash ratio result" aria-label="Cash">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateCash()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div>  

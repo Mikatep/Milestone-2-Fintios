@@ -38,7 +38,13 @@ let operand22 = document.getElementById("credit-purchase");
 let operand23 = document.getElementById("sales");
 let operand24 = document.getElementById("total-assets");
 let operand25 = document.getElementById("turnover-liabilities");
-
+let operand26 = document.getElementById("current-assets");
+let operand27 = document.getElementById("current-liabilities");
+let operand28 = document.getElementById("acid-assets");
+let operand29 = document.getElementById("acid-inventory");
+let operand30 = document.getElementById("acid-liabilities");
+let operand31 = document.getElementById("operating-cash");
+let operand32 = document.getElementById("cash-liabilities");
 
 
 /** gearing.html ratios */
@@ -137,6 +143,37 @@ function calculateTurnover() {
     y = parseFloat(operand25.value)
     let turnoverResult = document.getElementById("turnover-result").value = w / (x -y);  
    }
+
+/** liquidity.html ratios */
+/** Calculates the current ratio in liquidity.html*/
+
+function calculateCurrent() {
+
+    z = parseFloat(operand26.value)
+    aa = parseFloat(operand27.value)
+    let currentResult = document.getElementById("current-result").value = z / aa;  
+   }
+
+/** Calculates the acid ratio in liquidity.html*/
+
+function calculateAcid() {
+
+    bb = parseFloat(operand28.value)
+    cc = parseFloat(operand29.value)
+    dd = parseFloat(operand30.value)
+    let acidResult = document.getElementById("acid-result").value = (bb - cc) / dd;  
+   }
+
+/** Calculates the cash ratio in liquidity.html*/
+
+function calculateCash() {
+
+    ee = parseFloat(operand31.value)
+    ff = parseFloat(operand32.value)
+    let cashResult = document.getElementById("cash-result").value = ee / ff;  
+   }
+
+
     
    
     
