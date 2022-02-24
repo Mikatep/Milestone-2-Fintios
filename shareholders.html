@@ -53,7 +53,7 @@
         <div id="shareholders-ratios" class="row">
             <div id="dividend-payout" class="col-md-3">
                 <div class="row data-input"> 
-                    <form id="index-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">Dividend Payout Ratio</h2>
                         <div class="form-group">
                             <label class="label-2" for="dividend-year">Dividend announced for the year</label>
@@ -69,15 +69,15 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="dividend-payout-result">Dividend Payout Ratio Result</label>
-                            <input id="dividend-payout-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Dividend Payout Ratio result" aria-label="Dividend Payout Ratioresult">
+                            <input id="dividend-payout-result" class="form-control mr-sm-2" placeholder="Dividend Payout Ratio result" aria-label="Dividend Payout Ratioresult">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateDividend()"  class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div> 
             <div id="dividend-yield" class="col-md-3">
                 <div class="row data-input"> 
-                    <form id="index-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">Dividend Yield Ratio</h2>
                         <div class="form-group">
                             <label class="label-2" for="per-share">Dividend per share (net)</label>
@@ -89,15 +89,15 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="dividend-yield-result">Dividend Yield Ratio Result</label>
-                            <input id="dividend-yield-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Dividend Yield Ratio result" aria-label="Dividend Yield Ratio result">
+                            <input id="dividend-yield-result" class="form-control mr-sm-2" placeholder="Dividend Yield Ratio result" aria-label="Dividend Yield Ratio result">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateYield()"  class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div> 
             <div id="earnings-share" class="col-md-3">
                 <div class="row data-input"> 
-                    <form id="index-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">Earnings per share</h2>
                         <div class="form-group">
                             <label class="label-2" for="taxed-profit-earnings">Profit after Tax</label>
@@ -113,33 +113,29 @@
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="earnings-share-result">Earnings per share Result</label>
-                            <input id="earnings-share-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Earnings per share Result" aria-label="Earnings per share Result">
+                            <input id="earnings-share-result" class="form-control mr-sm-2"  placeholder="Earnings per share Result" aria-label="Earnings per share Result">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateEarnings()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div> 
             <div id="price-ratio" class="col-md-3">
                 <div class="row data-input"> 
-                    <form id="index-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">Price to earnings Ratio</h2>
                         <div class="form-group">
-                            <label class="label-2" for="price-profit">Profit after tax</label>
-                            <input id="price-profit" class="form-control mr-sm-2" type="number" step=".01" placeholder="Profit after tax" aria-label="Profit after tax">
+                            <label class="label-2" for="market-value">Market Value per share</label>
+                            <input id="market-value" class="form-control mr-sm-2" type="number" step=".01" placeholder="Profit after tax" aria-label="Profit after tax">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="price-preference">Preference dividends</label>
-                            <input id="price-preference" class="form-control mr-sm-2" type="number" step=".01" placeholder="Preference dividend" aria-label="Preference dividend">
-                        </div>
-                        <div class="form-group">
-                            <label class="label-2" for="price-ordinary-shares">Number of Ordinary Shares</label>
-                            <input id="price-ordinary-shares" class="form-control mr-sm-2" type="number" step=".01" placeholder="Number of Ordinary Shares" aria-label="Number of Ordinary Shares">
+                            <label class="label-2" for="price-earnings">Earnings per share</label>
+                            <input id="price-earnings" class="form-control mr-sm-2" type="number" step=".01" placeholder="Preference dividend" aria-label="Preference dividend">
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="price-ratio-result">Price to earnings Ratio Result</label>
-                            <input id="price-ratio-result" class="form-control mr-sm-2" type="number" step=".01" placeholder="Price to earnings Ratio Result" aria-label="Price">
+                            <input id="price-ratio-result" class="form-control mr-sm-2" placeholder="Price to earnings Ratio Result" aria-label="Price">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculatePrice()"  class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div>
