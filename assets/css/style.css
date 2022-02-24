@@ -23,6 +23,13 @@ body {
   padding-right: 15px;
 }
 
+.general-form {
+  width: 75%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /*-------------------------------------------Media queries*/
 
 @media(min-width: 768px) {
@@ -138,13 +145,6 @@ body {
   color: #fff;
 }
 
-.general-form {
-  width: 75%;
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 .data-input {
     background-color: #020202;
     margin-top: 0;
@@ -184,25 +184,32 @@ body {
   margin: auto;
 }
 
-/*-------------------------------------------Liquidity.index*/
+/*-------------------------------------------profitability.html*/
+
+#profitability-ratios {
+  background-color: #020202;
+}
+
+
+/*-------------------------------------------Liquidity.html*/
 
 #liquidity-ratios {
   background-color: #020202;
 }
 
-/*-------------------------------------------Liquidity.index*/
+/*-------------------------------------------Liquidity.html*/
 
 #efficiency-ratios {
   background-color: #020202;
 }
 
-/*-------------------------------------------gearing.index*/
+/*-------------------------------------------gearing.html*/
 
 #gearing-ratios {
   background-color: #020202;
 }
 
-/*-------------------------------------------shareholders.index*/
+/*-------------------------------------------shareholders.html*/
 
 #shareholders-ratios {
   background-color: #020202;

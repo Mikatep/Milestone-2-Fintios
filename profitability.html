@@ -50,100 +50,92 @@
         </div>
     </section>
     <section>
-        <div class="row">
+        <div id= "profitability-ratios" class="row">
             <div id="roce" class="col-md-3">
                 <div class="row data-input"> 
-                    <form class="general-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">ROCE</h2>
                         <div class="form-group">
-                            <label class="label-2" for="roce-data-a">roce-data-a</label>
-                            <input id="roce-data-a" class="form-control mr-sm-2" type="text" placeholder="roce-data-a" aria-label="Name">
+                            <label class="label-2" for="roce-operating">Operating Profit</label>
+                            <input id="roce-operating" class="form-control mr-sm-2" type="number" step=".01" placeholder="Operating Profit" aria-label="Name">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="roce-data-b">roce-data-b<Address></Address></label>
-                            <input id="roce-data-b" class="form-control mr-sm-2" type="email" placeholder="roce-data-b" aria-label="Email">
+                            <label class="label-2" for="roce-equity">Total Equity<Address></Address></label>
+                            <input id="roce-equity" class="form-control mr-sm-2" type="number" step=".01" placeholder="Total equity" aria-label="Email">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="roce-data-c">roce-data-c<Address></Address></label>
-                            <input id="roce-data-c" class="form-control mr-sm-2" type="email" placeholder="roce-data-c" aria-label="Email">
+                            <label class="label-2" for="roce-liabilities">Non Current Liabilities<Address></Address></label>
+                            <input id="roce-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="Non Current Liabilities" aria-label="Email">
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="roce-result">ROCE result<Address></Address></label>
-                            <input id="roce-result" class="form-control mr-sm-2" type="email" placeholder="roce-result" aria-label="Email">
+                            <input id="roce-result" class="form-control mr-sm-2" placeholder="roce-result" aria-label="Roce result">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateRoce()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div> 
             <div id="rosf" class="col-md-3">
                 <div class="row data-input"> 
-                    <form class="general-form">
+                    <form class="general-form" onsubmit="return false">
                         <h2 class="form-headings">ROSF</h2>
                         <div class="form-group">
-                            <label class="label-2" for="rosf-data-a">rosf-data-a</label>
-                            <input id="rosf-data-a" class="form-control mr-sm-2" type="text" placeholder="rosf-data-a" aria-label="Name">
+                            <label class="label-2" for="rosf-profit">Profit for the year</label>
+                            <input id="rosf-profit" class="form-control mr-sm-2" type="number" step=".01" placeholder="profit for the year" aria-label="profit for the year">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="rosf-data-b">rosf-data-b<Address></Address></label>
-                            <input id="rosf-data-b" class="form-control mr-sm-2" type="email" placeholder="rosf-data-b" aria-label="Email">
+                            <label class="label-2" for="rosf-preference">Preference dividend<Address></Address></label>
+                            <input id="rosf-preference" class="form-control mr-sm-2" type="number" step=".01" placeholder="Preference dividend" aria-label="Preference dividend">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="rosf-data-c">rosf-data-c<Address></Address></label>
-                            <input id="rosf-data-c" class="form-control mr-sm-2" type="email" placeholder="rosf-data-c" aria-label="Email">
+                            <label class="label-2" for="rosf-equity">Total Equity<Address></Address></label>
+                            <input id="rosf-equity" class="form-control mr-sm-2" type="number" step=".01" placeholder="Total Equity" aria-label="Total Equity">
                         </div>
                         <div class="form-group">
                             <label class="label-2" for="rosf-result">ROSF result<Address></Address></label>
-                            <input id="rosf-result" class="form-control mr-sm-2" type="email" placeholder="rosf-result" aria-label="Email">
+                            <input id="rosf-result" class="form-control mr-sm-2"placeholder="rosf-result" aria-label="rosf-result">
                         </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateRosf()"  class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div>
             <div id="net" class="col-md-3">
                 <div class="row data-input"> 
-                    <form class="general-form">
-                        <h2 class="form-headings">NET</h2>
+                    <form class="general-form" onsubmit="return false">
+                        <h2 class="form-headings">Operating Profit Margin</h2>
                         <div class="form-group">
-                            <label class="label-2" for="net-data-a">net-data-a</label>
-                            <input id="net-data-a" class="form-control mr-sm-2" type="text" placeholder="net-data-a" aria-label="Name">
+                            <label class="label-2" for="net-operating">Operating Profit</label>
+                            <input id="net-operating" class="form-control mr-sm-2" type="number" step=".01" placeholder="Operating Profit" aria-label="Operating Profit">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="net-data-b">net-data-b<Address></Address></label>
-                            <input id="net-data-b" class="form-control mr-sm-2" type="email" placeholder="net-data-b" aria-label="Email">
+                            <label class="label-2" for="net-sales">Sales Revenue<Address></Address></label>
+                            <input id="net-sales" class="form-control mr-sm-2" type="number" step=".01" placeholder="Sales Revenue" aria-label= "Sales Revenue">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="net-data-c">net-data-c<Address></Address></label>
-                            <input id="net-data-c" class="form-control mr-sm-2" type="email" placeholder="net-data-c" aria-label="Email">
+                            <label class="label-2" for="net-result">Operating Profit Result<Address></Address></label>
+                            <input id="net-result" class="form-control mr-sm-2" placeholder="Operating Profit Result" aria-label="Operating Profit Result">
                         </div>
-                        <div class="form-group">
-                            <label class="label-2" for="net-result">NET result<Address></Address></label>
-                            <input id="net-result" class="form-control mr-sm-2" type="email" placeholder="net-result" aria-label="Email">
-                        </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateMargin()"  class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div> 
             <div id="gross" class="col-md-3">
                 <div class="row data-input"> 
-                    <form class="general-form">
-                        <h2 class="form-headings">GROSS</h2>
+                    <form class="general-form" onsubmit="return false">
+                        <h2 class="form-headings">Gross Profit margin</h2>
                         <div class="form-group">
-                            <label class="label-2" for="gross-data-a">gross-data-a</label>
-                            <input id="gross-data-a" class="form-control mr-sm-2" type="text" placeholder="gross-data-a" aria-label="Name">
+                            <label class="label-2" for="gross-operating">Gross Operating Profit</label>
+                            <input id="gross-operating" class="form-control mr-sm-2" type="number" step=".01" placeholder="Gross Operating Profit" aria-label="Gross Operating Profit">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="gross-data-b">gross-data-b<Address></Address></label>
-                            <input id="gross-data-b" class="form-control mr-sm-2" type="email" placeholder="gross-data-b" aria-label="Email">
+                            <label class="label-2" for="gross-sales">Sales Revenue<Address></Address></label>
+                            <input id="gross-sales" class="form-control mr-sm-2" type="number" step=".01" placeholder="Sales Revenue" aria-label="Sales Revenue">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="gross-data-c">gross-data-c<Address></Address></label>
-                            <input id="gross-data-c" class="form-control mr-sm-2" type="email" placeholder="gross-data-c" aria-label="Email">
+                            <label class="label-2" for="gross-result">Gross Operating Profit Result<Address></Address></label>
+                            <input id="gross-result" class="form-control mr-sm-2" placeholder="gross-result" aria-label="Sales Revenue result">
                         </div>
-                        <div class="form-group">
-                            <label class="label-2" for="gross-result">GROSS result<Address></Address></label>
-                            <input id="gross-result" class="form-control mr-sm-2" type="email" placeholder="gross-result" aria-label="Email">
-                        </div>
-                          <button type="submit" class="btn mb-2 btn-user-data">Submit</button>
+                          <button type="submit" onclick="calculateGross()" class="btn mb-2 btn-user-data">Submit</button>
                     </form>
                 </div>
             </div>              

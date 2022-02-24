@@ -45,6 +45,16 @@ let operand29 = document.getElementById("acid-inventory");
 let operand30 = document.getElementById("acid-liabilities");
 let operand31 = document.getElementById("operating-cash");
 let operand32 = document.getElementById("cash-liabilities");
+let operand33 = document.getElementById("roce-operating");
+let operand34 = document.getElementById("roce-equity");
+let operand35 = document.getElementById("roce-liabilities");
+let operand36 = document.getElementById("rosf-profit");
+let operand37 = document.getElementById("rosf-preference");
+let operand38 = document.getElementById("rosf-equity");
+let operand39 = document.getElementById("net-operating");
+let operand40 = document.getElementById("net-sales");
+let operand41 = document.getElementById("gross-operating");
+let operand42 = document.getElementById("gross-sales");
 
 
 /** gearing.html ratios */
@@ -172,6 +182,47 @@ function calculateCash() {
     ff = parseFloat(operand32.value)
     let cashResult = document.getElementById("cash-result").value = ee / ff;  
    }
+
+/** profitability.html ratios */
+/** Calculates the ROCE ratio in profitability.html*/
+
+function calculateRoce() {
+
+    gg = parseFloat(operand33.value)
+    hh = parseFloat(operand34.value)
+    ii = parseFloat(operand35.value)
+    let roceResult = document.getElementById("roce-result").value = gg / (hh + ii);  
+   }
+
+/** Calculates the ROCE ratio in profitability.html*/
+
+function calculateRosf() {
+
+    jj = parseFloat(operand36.value)
+    kk = parseFloat(operand37.value)
+    ll = parseFloat(operand38.value)
+    let rosfResult = document.getElementById("rosf-result").value = ((jj - kk) *100) / ll;  
+   }
+
+/** Calculates the Operating Profit margin in profitability.html*/
+
+function calculateMargin() {
+
+    mm = parseFloat(operand39.value)
+    nn = parseFloat(operand40.value)
+    let marginResult = document.getElementById("net-result").value = (mm / nn) *100;  
+   }
+
+/** Calculates the Gross Operating Profit margin in profitability.html*/
+
+function calculateGross() {
+
+    oo = parseFloat(operand41.value)
+    pp = parseFloat(operand42.value)
+    let grossResult = document.getElementById("gross-result").value = (oo / pp) *100;  
+   }
+
+
 
 
     
