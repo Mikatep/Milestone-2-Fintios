@@ -68,6 +68,16 @@ function calculateGearing() {
     d = parseFloat(operand4.value)
     let gearingResult = document.getElementById("gearing-result").value = a / (b + c + d);  
    }
+
+const gearingFeedback = () => {
+    let result1 = document.getElementById("gearing-result");
+    aaa = parseFloat(result1.value)
+    if (aaa >= 0.50) {
+        document.getElementById("gearing-feedback").value = "hello";
+    } else {
+        document.getElementById("gearing-feedback").value = "bye";
+    }
+}
     
 /** Calculates the interest cover ratio in gearing.html*/
     

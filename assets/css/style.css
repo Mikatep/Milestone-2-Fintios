@@ -23,6 +23,13 @@ body {
   padding-right: 15px;
 }
 
+.label-2-result {
+  color: #F67571;
+  font-size: 20px;
+  padding-right: 15px;
+}
+
+
 .general-form {
   width: 75%;
   margin: auto;

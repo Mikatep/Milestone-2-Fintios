@@ -72,10 +72,15 @@
                             <input id="long-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="Long Term Liabilities" aria-label="Long Term Liabilities">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="gearing-result">Gearing Ratio Result</label>
+                            <label class="label-2-result" for="gearing-result">Gearing Ratio Result</label>
                             <input id="gearing-result" class="form-control mr-sm-2" placeholder="Gearing result" aria-label="Gearing result">
                         </div>
-                        <button type="submit" onclick="calculateGearing()" class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="gearing-feedback">Gearing Ratio Feedback</label>
+                            <input id="gearing-feedback" class="form-control mr-sm-2" placeholder="Gearing Feedback or formulae" aria-label=" Gearing Feedback or formulae">
+                        </div> 
+                        <button type="submit" onclick="calculateGearing()" class="btn mb-2 btn-user-data">Calculate</button>
+                        <button type="submit" onclick="gearingFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
                     </form>
                 </div>
             </div> 
