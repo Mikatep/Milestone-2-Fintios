@@ -37,6 +37,11 @@ body {
   padding-bottom: 50px;
 }
 
+.feedback {
+  min-height: 40px;
+  height: fit-content!important;
+}
+
 /*-------------------------------------------Media queries*/
 
 @media(min-width: 768px) {

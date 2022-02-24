@@ -73,9 +73,9 @@ const gearingFeedback = () => {
     let result1 = document.getElementById("gearing-result");
     aaa = parseFloat(result1.value)
     if (aaa >= 0.50) {
-        document.getElementById("gearing-feedback").value = "hello";
+        document.getElementById("gearing-feedback").innerHTML = "Your organization's Gearing Ratio is greater than 50%, is typically considered highly levered or geared. As a result, the company would be at greater financial risk, because during times of lower profits and higher interest rates, the company would be more susceptible to loan default and bankruptcy.";
     } else {
-        document.getElementById("gearing-feedback").value = "bye";
+        document.getElementById("gearing-feedback").innerHTML = "Your organization's Gearing Ratio is less than 50%, this is typically considered low-risk by both investors and lenders.";
     }
 }
     
