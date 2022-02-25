@@ -93,10 +93,16 @@
                             <input id="market-value" class="form-control mr-sm-2" type="number" step=".01" placeholder="Market value per share" aria-label="Market value per share">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="dividend-yield-result">Dividend Yield Ratio Result</label>
+                            <label class="label-2-result" for="dividend-yield-result">Dividend Yield Ratio Result</label>
                             <input id="dividend-yield-result" class="form-control mr-sm-2" placeholder="Dividend Yield Ratio result" aria-label="Dividend Yield Ratio result">
                         </div>
-                          <button type="submit" onclick="calculateYield()"  class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="yield-feedback">Dividend Yield Feedback</label>
+                            <span id="yield-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateYield()"  class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="yieldFeedback()"  class="btn mb-2 btn-user-data">Feedback</button>
+
                     </form>
                 </div>
             </div> 
@@ -117,10 +123,15 @@
                             <input id="ordinary-shares" class="form-control mr-sm-2" type="number" step=".01" placeholder="Number of Ordinary Shares" aria-label="Number of Ordinary Shares">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="earnings-share-result">Earnings per share Result</label>
+                            <label class="label-2-result" for="earnings-share-result">Earnings per share Result</label>
                             <input id="earnings-share-result" class="form-control mr-sm-2"  placeholder="Earnings per share Result" aria-label="Earnings per share Result">
                         </div>
-                          <button type="submit" onclick="calculateEarnings()" class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="earnings-feedback">Earnings per share Feedback</label>
+                            <span id="earnings-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateEarnings()" class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="earningsFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
                     </form>
                 </div>
             </div> 
@@ -137,10 +148,15 @@
                             <input id="price-earnings" class="form-control mr-sm-2" type="number" step=".01" placeholder="Preference dividend" aria-label="Preference dividend">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="price-ratio-result">Price to earnings Ratio Result</label>
+                            <label class="label-2-result" for="price-ratio-result">Price to earnings Ratio Result</label>
                             <input id="price-ratio-result" class="form-control mr-sm-2" placeholder="Price to earnings Ratio Result" aria-label="Price">
                         </div>
-                          <button type="submit" onclick="calculatePrice()"  class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="price-feedback">Price to Earnings Feedback</label>
+                            <span id="price-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculatePrice()"  class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="priceFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
                     </form>
                 </div>
             </div>

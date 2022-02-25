@@ -114,9 +114,11 @@ function calculateDividend() {
 const dividendFeedback = () => {
     let result3 = document.getElementById("dividend-payout-result");
     ccc = parseFloat(result3.value)
-    if (ccc >= 0.30 <= 0.50) {
-        document.getElementById("dividend-feedback").innerHTML = "Your organization's Dividend Payout Ratio is between 30% and 50%, this is considered a healthy dividend payout.";
-    } else if (ccc >= 0.50) {
+    if (ccc <= 0.30) {
+        document.getElementById("dividend-feedback").innerHTML = "Your organization's Dividend Payout Ratio is lower than 30%, this is sustainable for the company, however, organization's with a extremely low ratio will struggle to attract investors.";
+    } else if (ccc >= 0.30 <= 0.50) {
+        document.getElementById("dividend-feedback").innerHTML = "Your organization's Dividend Payout Ratio is between 30% and 50%, this is considered a healthy dividend payout."
+    } else {
         document.getElementById("dividend-feedback").innerHTML = "Your organization's Dividend Payout Ratio is greater than 50%, this is considered an unsustainable dividend payout since the company will have to pay 50% or more of the internal profit as dividend payout.";
     }
 }
@@ -130,6 +132,18 @@ function calculateYield() {
     let yieldResult = document.getElementById("dividend-yield-result").value = (j / k) * 100;  
    }
 
+const yieldFeedback = () => {
+    let result4 = document.getElementById("dividend-yield-result");
+    ddd = parseFloat(result4.value)
+    if (ddd < 5) {
+        document.getElementById("yield-feedback").innerHTML = "Your organization's Dividend Yield Ratio is lower than 5%, this is sustainable for the company, and it's the most common ratio used by organizations, however, organization's with a extremely low ratio will struggle to attract investors.";
+    } else if (ddd >= 5 <= 9.99) {
+        document.getElementById("yield-feedback").innerHTML = "Your organization's Dividend Yield Ratio is between 5% and 10%, this is considered a healthy dividend payout, it shows a consolidated and strong organizations with healthy finances, and it's interesting enough to attract investors.."
+    } else {
+        document.getElementById("yield-feedback").innerHTML = "Your organization's Dividend Yield Ratio is greater than 10%, this is considered an unsustainable and risky dividend yield in the industry, historically companies with this kind of dividend yield struggle to actually pay the dividends to investors, and they constantly cancel the payment of dividends throughout the years. This companies may seem as a very attractive option for new investors, but definitely is advisable to 'Stay Away from them!";
+    }
+}
+
    /** Calculates the dividend payout ratio in shareholders.html*/
 
 function calculateEarnings() {
@@ -140,6 +154,14 @@ function calculateEarnings() {
     let earningsResult = document.getElementById("earnings-share-result").value = ((l - m) * 100 ) /n;  
    }
 
+const earningsFeedback = () => {
+    let result5 = document.getElementById("earnings-share-result");
+    eee = parseFloat(result5.value)
+    if (eee > 0) {
+        document.getElementById("earnings-feedback").innerHTML = "Your organization's Earnings per Share Ratio is greater than 0, there is not good or bad when it comes to earnings per share ratio, the extended conception about it is 'the higher the better'. The resulting number serves as an indicator of a company's profitability.";
+    }
+}
+
   /** Calculates the dividend payout ratio in shareholders.html*/
 
   function calculatePrice() {
@@ -148,6 +170,14 @@ function calculateEarnings() {
     p = parseFloat(operand16.value)
     let priceResult = document.getElementById("price-ratio-result").value = o / p;  
    }
+
+   const priceFeedback = () => {
+    let result6 = document.getElementById("price-ratio-result");
+    fff = parseFloat(result6.value)
+    if (fff > 0) {
+        document.getElementById("price-feedback").innerHTML = "Your organization's Price to Earnings Ratio is greater than 0. As it happens with the earnings per share ratio, there's not such a thing as a good or bad price to earnings ratio. A higher P/E ratio shows that investors are willing to pay a higher share price today because of growth expectations in the future. The average P/E for the S&P 500 has historically ranged from 13 to 15. For example, a company with a current P/E of 25, above the S&P average, trades at 25 times earnings.";
+    } 
+}
 
 /** efficiency.html ratios */
 /** Calculates the inventory holding period in efficiency.html*/
