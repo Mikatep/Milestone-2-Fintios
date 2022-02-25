@@ -1,17 +1,3 @@
-/** Event listener for all ratios buttons */
-
-document.addEventListener("DOMContentLoaded", function() {
-  let buttons = document.getElementsByTagName("button");
-
-  for (let button of buttons) {
-      button.addEventListener("click", function() {
-          if (this.getAttribute("data-type") === "submit") {
-              calculateGearing();
-          } 
-      });
-  }
-})
-
 /** Variables */
 let operand1 = document.getElementById("non-curli");
 let operand2 = document.getElementById("gearing-capital");
@@ -291,6 +277,18 @@ function calculateCurrent() {
     let currentResult = document.getElementById("current-result").value = z / aa;  
    }
 
+/** Provides Feedback for the result of current ratio in liquidity.html*/
+
+const currentFeedback = () => {
+    let result11 = document.getElementById("current-result");
+    kkk = parseFloat(result11.value)
+    if (1.5 >= kkk <= 2 ) {
+        document.getElementById("current-feedback").innerHTML = "Your organization's current ratio is between 1.5 and 2. This is considered as a good standard current ratio in most industries. Anything lower than that, would mean that your company's debt are too high in comparison with the available cash, and your company could run out of cash soon.";
+    } else {
+        document.getElementById("current-feedback").innerHTML = "Your organization's current ratio is not between 1.5 and 2. That means your current ratio is too low or too high, if it is lower than 1.5 your company risk bankruptcy since the cash available is not enought to cover debts. If it is greater than 2 your organization's is not performing at the maximum of its possibilities.";
+    }
+}
+
 /** Calculates the acid ratio in liquidity.html*/
 
 function calculateAcid() {
@@ -301,6 +299,18 @@ function calculateAcid() {
     let acidResult = document.getElementById("acid-result").value = (bb - cc) / dd;  
    }
 
+/** Provides Feedback for the result of acid ratio in liquidity.html*/
+
+const acidFeedback = () => {
+    let result12 = document.getElementById("acid-result");
+    lll = parseFloat(result12.value)
+    if (lll >= 1 ) {
+        document.getElementById("acid-feedback").innerHTML = "Your organization's acid ratio is greater than 1. This is considered as a good standard acid ratio in most industries, and shows that the organization's have enough liquidity to cover their current liabilities.";
+    } else {
+        document.getElementById("acid-feedback").innerHTML = "Your organization's acid ratio is lower than 1. That means your acid ratio is too low, and your company will struggle to cover its current liabilities since the liquidity is too low to cover it.";
+    }
+}
+
 /** Calculates the cash ratio in liquidity.html*/
 
 function calculateCash() {
@@ -309,6 +319,18 @@ function calculateCash() {
     ff = parseFloat(operand32.value)
     let cashResult = document.getElementById("cash-result").value = ee / ff;  
    }
+
+/** Provides Feedback for the result of cash ratio in liquidity.html*/
+
+const cashFeedback = () => {
+    let result13 = document.getElementById("cash-result");
+    mmm = parseFloat(result13.value)
+    if (mmm >= 1 ) {
+        document.getElementById("cash-feedback").innerHTML = "Your organization's cash ratio is greater than 1. This is considered as a good standard acid ratio in most industries, and shows that the organization's have enough cash to keep performing with normality";
+    } else {
+        document.getElementById("cash-feedback").innerHTML = "Your organization's cash ratio is lower than 1. That means your cash ratio is too low, and your company will struggle to perform its normal duties since it won't have enough cash to cover the daily trading costs.";
+    }
+}
 
 /** profitability.html ratios */
 /** Calculates the ROCE ratio in profitability.html*/
@@ -321,7 +343,17 @@ function calculateRoce() {
     let roceResult = document.getElementById("roce-result").value = gg / (hh + ii);  
    }
 
-/** Calculates the ROCE ratio in profitability.html*/
+/** Provides Feedback for the result of ROCE ratio in profitability.html*/
+
+const roceFeedback = () => {
+    let result14 = document.getElementById("roce-result");
+    nnn = parseFloat(result14.value)
+    if (nnn >= 0.1 ) {
+        document.getElementById("roce-feedback").innerHTML = "Your organization's ROCE ratio is greater than 1. There is not such a thing as a good or bad ratio result in ROCE, the higher the ROCE ratio the most sucessfull the company is considered.";
+    } 
+}
+
+/** Calculates the ROSF ratio in profitability.html*/
 
 function calculateRosf() {
 
@@ -330,6 +362,18 @@ function calculateRosf() {
     ll = parseFloat(operand38.value)
     let rosfResult = document.getElementById("rosf-result").value = ((jj - kk) *100) / ll;  
    }
+
+/** Provides Feedback for the result of ROSF ratio in profitability.html*/
+
+const rosfFeedback = () => {
+    let result15 = document.getElementById("rosf-result");
+    ooo = parseFloat(result15.value)
+    if (ooo >= 15 ) {
+        document.getElementById("rosf-feedback").innerHTML = "Your organization's ROSF ratio is greater than 15%. This is considered as a good standard rosf ratio in most industries, and its beneficial for the organization.";
+    } else {
+        document.getElementById("rosf-feedback").innerHTML = "Your organization's ROSF ratio is lower than 15%. That means your rosf ratio is too low, and the return on the shareholders funds is not as good as it could be. This lower ratio can also be found in new or young organizations, in the first years of trading the return of the shareholders funds is not as strong.";
+    }
+}
 
 /** Calculates the Operating Profit margin in profitability.html*/
 
@@ -340,6 +384,18 @@ function calculateMargin() {
     let marginResult = document.getElementById("net-result").value = (mm / nn) *100;  
    }
 
+/** Provides Feedback for the result of NET (operating) ratio in profitability.html*/
+
+const netFeedback = () => {
+    let result16 = document.getElementById("net-result");
+    ppp = parseFloat(result16.value)
+    if (ppp >= 15 ) {
+        document.getElementById("net-feedback").innerHTML = "Your organization's Operating profit ratio is greater than 15%. This is considered as a good standard operating margin ratio in most industries, a high operating margin ratio its a good indicator or good management and performance since it shows how effiently the organization manages its expenses.";
+    } else {
+        document.getElementById("net-feedback").innerHTML = "Your organization's Operating profit ratio is lower than 15%. That means your organization's operating margin ratio is too low, and your organization is not being efficient managing its expenses.";
+    }
+}
+
 /** Calculates the Gross Operating Profit margin in profitability.html*/
 
 function calculateGross() {
@@ -348,6 +404,18 @@ function calculateGross() {
     pp = parseFloat(operand42.value)
     let grossResult = document.getElementById("gross-result").value = (oo / pp) *100;  
    }
+
+/** Provides Feedback for the result of NET (operating) ratio in profitability.html*/
+
+const grossFeedback = () => {
+    let result17 = document.getElementById("gross-result");
+    qqq = parseFloat(result17.value)
+    if (qqq >= 50 ) {
+        document.getElementById("gross-feedback").innerHTML = "Your organization's  gross Operating profit ratio is greater than 50%. This is considered as a good standard gross operating margin ratio in most industries, however, the number of what is considered as a good gross profit ratio will vary in different indrustries, for example a percentage of 50% would be consider a low ratio in hospitality or food retail.";
+    } else {
+        document.getElementById("gross-feedback").innerHTML = "Your organization's gross Operating profit ratio is lower than 15%. That means your organization's operating margin ratio is too low, and your organization does not has enought margin to cover the expenses of trading and make a net profit.";
+    }
+}
 
 
 

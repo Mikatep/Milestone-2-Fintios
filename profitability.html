@@ -68,10 +68,16 @@
                             <input id="roce-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="Non Current Liabilities" aria-label="Email">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="roce-result">ROCE result<Address></Address></label>
+                            <label class="label-2-result" for="roce-result">ROCE result<Address></Address></label>
                             <input id="roce-result" class="form-control mr-sm-2" placeholder="roce-result" aria-label="Roce result">
                         </div>
-                          <button type="submit" onclick="calculateRoce()" class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="roce-feedback">ROCE Ratio Feedback</label>
+                            <span id="roce-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateRoce()" class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="roceFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
+
                     </form>
                 </div>
             </div> 
@@ -92,10 +98,15 @@
                             <input id="rosf-equity" class="form-control mr-sm-2" type="number" step=".01" placeholder="Total Equity" aria-label="Total Equity">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="rosf-result">ROSF result<Address></Address></label>
+                            <label class="label-2-result" for="rosf-result">ROSF result<Address></Address></label>
                             <input id="rosf-result" class="form-control mr-sm-2"placeholder="rosf-result" aria-label="rosf-result">
                         </div>
-                          <button type="submit" onclick="calculateRosf()"  class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="rosf-feedback">ROSF Ratio Feedback</label>
+                            <span id="rosf-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateRosf()"  class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="rosfFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
                     </form>
                 </div>
             </div>
@@ -112,10 +123,15 @@
                             <input id="net-sales" class="form-control mr-sm-2" type="number" step=".01" placeholder="Sales Revenue" aria-label= "Sales Revenue">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="net-result">Operating Profit Result<Address></Address></label>
+                            <label class="label-2-result" for="net-result">Operating Profit Result<Address></Address></label>
                             <input id="net-result" class="form-control mr-sm-2" placeholder="Operating Profit Result" aria-label="Operating Profit Result">
                         </div>
-                          <button type="submit" onclick="calculateMargin()"  class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="net-feedback">Operating Ratio Feedback</label>
+                            <span id="net-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateMargin()"  class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="netFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
                     </form>
                 </div>
             </div> 
@@ -132,10 +148,16 @@
                             <input id="gross-sales" class="form-control mr-sm-2" type="number" step=".01" placeholder="Sales Revenue" aria-label="Sales Revenue">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="gross-result">Gross Operating Profit Result<Address></Address></label>
+                            <label class="label-2-result" for="gross-result">Gross Operating Profit Result<Address></Address></label>
                             <input id="gross-result" class="form-control mr-sm-2" placeholder="gross-result" aria-label="Sales Revenue result">
                         </div>
-                          <button type="submit" onclick="calculateGross()" class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="gross-feedback">Gross Operating Ratio Feedback</label>
+                            <span id="gross-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateGross()" class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="grossFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
+
                     </form>
                 </div>
             </div>              

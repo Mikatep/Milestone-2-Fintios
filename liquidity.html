@@ -64,10 +64,16 @@
                             <input id="current-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="current liabilities" aria-label="current-liabilities">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="current-result">Current Ratio Result</label>
+                            <label class="label-2-result" for="current-result">Current Ratio Result</label>
                             <input id="current-result" class="form-control mr-sm-2" placeholder="current result" aria-label="current-result">
                         </div>
-                          <button type="submit" onclick="calculateCurrent()" class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="current-feedback">Current Ratio Feedback</label>
+                            <span id="current-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateCurrent()" class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="currentFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
+
                     </form>
                 </div>
             </div> 
@@ -88,10 +94,15 @@
                             <input id="acid-inventory" class="form-control mr-sm-2" type="number" step=".01" placeholder="Inventory" aria-label="acid-inventory">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="acid-result">ACID Ratio Result</label>
+                            <label class="label-2-result" for="acid-result">ACID Ratio Result</label>
                             <input id="acid-result" class="form-control mr-sm-2" placeholder="Acid ratio result" aria-label="Acid">
                         </div>
-                          <button type="submit" onclick="calculateAcid()" class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="acid-feedback">Acid Ratio Feedback</label>
+                            <span id="acid-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateAcid()" class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="acidFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
                     </form>
                 </div>
             </div>
@@ -108,10 +119,15 @@
                             <input id="cash-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="current liabilities" aria-label="cash liabilities">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="cash-result">CASH Ratio Result</label>
+                            <label class="label-2-result" for="cash-result">CASH Ratio Result</label>
                             <input id="cash-result" class="form-control mr-sm-2" placeholder="Cash ratio result" aria-label="Cash">
                         </div>
-                          <button type="submit" onclick="calculateCash()" class="btn mb-2 btn-user-data">Submit</button>
+                        <div class="form-group">
+                            <label class="label-2-result" for="cash-feedback">Cash Ratio Feedback</label>
+                            <span id="cash-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                        </div> 
+                          <button type="submit" onclick="calculateCash()" class="btn mb-2 btn-user-data">Calculate</button>
+                          <button type="submit" onclick="cashFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
                     </form>
                 </div>
             </div>  
