@@ -38,7 +38,7 @@
             </div>
         </div>
     </header>
-    <section id="hero">
+    <section class="hero">
         <!-- Fixing a multiline typing effect (stackoverflow)-->
         <div id="hero-background" class="row">
             <div id="hero-bot" class="row">
@@ -62,20 +62,20 @@
                             <input id="roce-operating" class="form-control mr-sm-2" type="number" step=".01" placeholder="Operating Profit" aria-label="Name">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="roce-equity">Total Equity<Address></Address></label>
+                            <label class="label-2" for="roce-equity">Total Equity</label>
                             <input id="roce-equity" class="form-control mr-sm-2" type="number" step=".01" placeholder="Total equity" aria-label="Email">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="roce-liabilities">Non Current Liabilities<Address></Address></label>
+                            <label class="label-2" for="roce-liabilities">Non Current Liabilities</label>
                             <input id="roce-liabilities" class="form-control mr-sm-2" type="number" step=".01" placeholder="Non Current Liabilities" aria-label="Email">
                         </div>
                         <div class="form-group">
-                            <label class="label-2-result" for="roce-result">ROCE result<Address></Address></label>
+                            <label class="label-2-result" for="roce-result">ROCE result</label>
                             <input id="roce-result" class="form-control mr-sm-2" placeholder="roce-result" aria-label="Roce result">
                         </div>
                         <div class="form-group">
-                            <label class="label-2-result" for="roce-feedback">ROCE Ratio Feedback</label>
-                            <span id="roce-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                            <h3 class="label-2-result">ROCE Ratio Feedback</h3>
+                            <span id="roce-feedback" class="form-control mr-sm-2 feedback"></span>
                         </div> 
                           <button type="submit" onclick="calculateRoce()" class="btn mb-2 btn-user-data">Calculate</button>
                           <button type="submit" onclick="roceFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
@@ -92,20 +92,20 @@
                             <input id="rosf-profit" class="form-control mr-sm-2" type="number" step=".01" placeholder="profit for the year" aria-label="profit for the year">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="rosf-preference">Preference dividend<Address></Address></label>
+                            <label class="label-2" for="rosf-preference">Preference dividend</label>
                             <input id="rosf-preference" class="form-control mr-sm-2" type="number" step=".01" placeholder="Preference dividend" aria-label="Preference dividend">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="rosf-equity">Total Equity<Address></Address></label>
+                            <label class="label-2" for="rosf-equity">Total Equity</label>
                             <input id="rosf-equity" class="form-control mr-sm-2" type="number" step=".01" placeholder="Total Equity" aria-label="Total Equity">
                         </div>
                         <div class="form-group">
-                            <label class="label-2-result" for="rosf-result">ROSF result<Address></Address></label>
-                            <input id="rosf-result" class="form-control mr-sm-2"placeholder="rosf-result" aria-label="rosf-result">
+                            <label class="label-2-result" for="rosf-result">ROSF result</label>
+                            <input id="rosf-result" class="form-control mr-sm-2" placeholder="rosf-result" aria-label="rosf-result">
                         </div>
                         <div class="form-group">
-                            <label class="label-2-result" for="rosf-feedback">ROSF Ratio Feedback</label>
-                            <span id="rosf-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                            <h3 class="label-2-result">ROSF Ratio Feedback</h3>
+                            <span id="rosf-feedback" class="form-control mr-sm-2 feedback"></span>
                         </div> 
                           <button type="submit" onclick="calculateRosf()"  class="btn mb-2 btn-user-data">Calculate</button>
                           <button type="submit" onclick="rosfFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
@@ -121,16 +121,16 @@
                             <input id="net-operating" class="form-control mr-sm-2" type="number" step=".01" placeholder="Operating Profit" aria-label="Operating Profit">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="net-sales">Sales Revenue<Address></Address></label>
+                            <label class="label-2" for="net-sales">Sales Revenue</label>
                             <input id="net-sales" class="form-control mr-sm-2" type="number" step=".01" placeholder="Sales Revenue" aria-label= "Sales Revenue">
                         </div>
                         <div class="form-group">
-                            <label class="label-2-result" for="net-result">Operating Profit Result<Address></Address></label>
+                            <label class="label-2-result" for="net-result">Operating Profit Result</label>
                             <input id="net-result" class="form-control mr-sm-2" placeholder="Operating Profit Result" aria-label="Operating Profit Result">
                         </div>
                         <div class="form-group">
-                            <label class="label-2-result" for="net-feedback">Operating Ratio Feedback</label>
-                            <span id="net-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                            <h3 class="label-2-result">Operating Ratio Feedback</h3>
+                            <span id="net-feedback" class="form-control mr-sm-2 feedback"></span>
                         </div> 
                           <button type="submit" onclick="calculateMargin()"  class="btn mb-2 btn-user-data">Calculate</button>
                           <button type="submit" onclick="netFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
@@ -146,16 +146,16 @@
                             <input id="gross-operating" class="form-control mr-sm-2" type="number" step=".01" placeholder="Gross Operating Profit" aria-label="Gross Operating Profit">
                         </div>
                         <div class="form-group">
-                            <label class="label-2" for="gross-sales">Sales Revenue<Address></Address></label>
+                            <label class="label-2" for="gross-sales">Sales Revenue</label>
                             <input id="gross-sales" class="form-control mr-sm-2" type="number" step=".01" placeholder="Sales Revenue" aria-label="Sales Revenue">
                         </div>
                         <div class="form-group">
-                            <label class="label-2-result" for="gross-result">Gross Operating Profit Result<Address></Address></label>
+                            <label class="label-2-result" for="gross-result">Gross Operating Profit Result</label>
                             <input id="gross-result" class="form-control mr-sm-2" placeholder="gross-result" aria-label="Sales Revenue result">
                         </div>
                         <div class="form-group">
-                            <label class="label-2-result" for="gross-feedback">Gross Operating Ratio Feedback</label>
-                            <span id="gross-feedback" class="form-control mr-sm-2 feedback" type="text"></span>
+                            <h3 class="label-2-result">Gross Operating Ratio Feedback</h3>
+                            <span id="gross-feedback" class="form-control mr-sm-2 feedback"></span>
                         </div> 
                           <button type="submit" onclick="calculateGross()" class="btn mb-2 btn-user-data">Calculate</button>
                           <button type="submit" onclick="grossFeedback()" class="btn mb-2 btn-user-data">Feedback</button>
