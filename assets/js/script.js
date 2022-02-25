@@ -69,6 +69,8 @@ function calculateGearing() {
     let gearingResult = document.getElementById("gearing-result").value = a / (b + c + d);  
    }
 
+/** Provides Feedback for the result of the  gearing ratio in gearing.html*/
+
 const gearingFeedback = () => {
     let result1 = document.getElementById("gearing-result");
     aaa = parseFloat(result1.value)
@@ -87,6 +89,8 @@ function calculateCover() {
     f = parseFloat(operand6.value)
     document.getElementById('cover-result').value = e / f;  
    }
+
+/** Provides Feedback for the result of the cover ratio in gearing.html*/
 
 const coverFeedback = () => {
     let result2 = document.getElementById("cover-result");
@@ -111,6 +115,8 @@ function calculateDividend() {
     let dividendResult = document.getElementById("dividend-payout-result").value = (g / (h -i)) * 100;  
    }
 
+/** Provides Feedback for the result of the dividend ratio in shareholders.html*/
+
 const dividendFeedback = () => {
     let result3 = document.getElementById("dividend-payout-result");
     ccc = parseFloat(result3.value)
@@ -131,6 +137,8 @@ function calculateYield() {
     k = parseFloat(operand11.value)
     let yieldResult = document.getElementById("dividend-yield-result").value = (j / k) * 100;  
    }
+
+/** Provides Feedback for the result of the dividend yield ratio in shareholders.html*/
 
 const yieldFeedback = () => {
     let result4 = document.getElementById("dividend-yield-result");
@@ -154,6 +162,8 @@ function calculateEarnings() {
     let earningsResult = document.getElementById("earnings-share-result").value = ((l - m) * 100 ) /n;  
    }
 
+/** Provides Feedback for the result of the earnings per share ratio in shareholders.html*/
+
 const earningsFeedback = () => {
     let result5 = document.getElementById("earnings-share-result");
     eee = parseFloat(result5.value)
@@ -170,6 +180,8 @@ const earningsFeedback = () => {
     p = parseFloat(operand16.value)
     let priceResult = document.getElementById("price-ratio-result").value = o / p;  
    }
+
+/** Provides Feedback for the result of the price to earnings ratio in shareholders.html*/
 
    const priceFeedback = () => {
     let result6 = document.getElementById("price-ratio-result");
@@ -188,6 +200,8 @@ function calculateInventory() {
     r = parseFloat(operand18.value)
     let inventoryResult = document.getElementById("inventory-holding-result").value = (q / r) * 365;  
    }
+
+/** Provides Feedback for the result of the inventory holding ratio in efficiency.html*/
 
 const inventoryFeedback = () => {
     let result7 = document.getElementById("inventory-holding-result");
@@ -210,6 +224,8 @@ function calculateReceivables() {
     let receivablesResult = document.getElementById("trade-settlement-result").value = (s / t) * 365;  
    }
 
+/** Provides Feedback for the result of the trade receivables settlement ratio in efficiency.html*/
+
    const receivablesFeedback = () => {
     let result8 = document.getElementById("trade-settlement-result");
     hhh = parseFloat(result8.value)
@@ -230,6 +246,18 @@ function calculatePayables() {
     let payablesResult = document.getElementById("trade-payables-result").value = (u / v) * 365;  
    }
 
+/** Provides Feedback for the result of the trade payables settlement ratio in efficiency.html*/
+
+const payablesFeedback = () => {
+    let result9 = document.getElementById("trade-payables-result");
+    iii = parseFloat(result9.value)
+    if (iii >= 30) {
+        document.getElementById("payables-feedback").innerHTML = "Your organization's trade payables settlement period is greater than 30 days. This is considereded as a good standard settlement period in the industry. Extending the payment of the credit purchases helps the organization to have higher liquidity and more cash.";
+    } else {
+        document.getElementById("payables-feedback").innerHTML = "Your organization's trade payables settlement period is lower than 30 days. Even tho, this does not mean that the organization's is doing something wrong, shows that is not taking fully advantage of the financial tools available.";
+    }
+}
+
 /** Calculates the average turnover ratio in efficiency.html*/
 
 function calculateTurnover() {
@@ -239,6 +267,19 @@ function calculateTurnover() {
     y = parseFloat(operand25.value)
     let turnoverResult = document.getElementById("turnover-result").value = w / (x -y);  
    }
+
+/** Provides Feedback for the result of turnover ratio in efficiency.html*/
+
+const turnoverFeedback = () => {
+    let result10 = document.getElementById("turnover-result");
+    jjj = parseFloat(result10.value)
+    if (jjj >= 5) {
+        document.getElementById("turnover-feedback").innerHTML = "Your organization's turnover ratio is greater than 5. This is considered as a good standard turnover ratio in most industries, which indicates that you sell and restock your inventory every 1-2 months. This ratio strikes a good balance between having enough inventory on hand and not having to reorder too frequently.";
+    } else {
+        document.getElementById("turnover-feedback").innerHTML = "Your organization's turnover ratio is lower than 5. Even tho, this does not mean that the organization's is doing something wrong, shows that the control in the inventory is not perfected or the organization belongs to a fast turnover industry such as hospitality or food retail.";
+    }
+}
+
 
 /** liquidity.html ratios */
 /** Calculates the current ratio in liquidity.html*/
