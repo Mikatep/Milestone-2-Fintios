@@ -137,7 +137,7 @@ const yieldFeedback = () => {
     ddd = parseFloat(result4.value)
     if (ddd < 5) {
         document.getElementById("yield-feedback").innerHTML = "Your organization's Dividend Yield Ratio is lower than 5%, this is sustainable for the company, and it's the most common ratio used by organizations, however, organization's with a extremely low ratio will struggle to attract investors.";
-    } else if (ddd >= 5 <= 9.99) {
+    } else if ( 5 >= ddd <= 9.99) {
         document.getElementById("yield-feedback").innerHTML = "Your organization's Dividend Yield Ratio is between 5% and 10%, this is considered a healthy dividend payout, it shows a consolidated and strong organizations with healthy finances, and it's interesting enough to attract investors.."
     } else {
         document.getElementById("yield-feedback").innerHTML = "Your organization's Dividend Yield Ratio is greater than 10%, this is considered an unsustainable and risky dividend yield in the industry, historically companies with this kind of dividend yield struggle to actually pay the dividends to investors, and they constantly cancel the payment of dividends throughout the years. This companies may seem as a very attractive option for new investors, but definitely is advisable to 'Stay Away from them!";
@@ -189,6 +189,18 @@ function calculateInventory() {
     let inventoryResult = document.getElementById("inventory-holding-result").value = (q / r) * 365;  
    }
 
+const inventoryFeedback = () => {
+    let result7 = document.getElementById("inventory-holding-result");
+    ggg = parseFloat(result7.value)
+    if (ggg >= 60) {
+        document.getElementById("inventory-feedback").innerHTML = "Your organization's Inventory holding Ratio is greater than 60 days, this is above average, and it means that you take longer than 2/3 months to sell and restock. This can be dangerous if your organization's belongs to an industry such a food retail or hospitality.";
+    } else if ( 20 >= ggg <= 59) {
+        document.getElementById("inventory-feedback").innerHTML = "Your organization's Inventory holding Ratio is between 20 and 59 days, this is considered a good holding inventory period, and it means that the organization is able to sell all the inventory and restock withing 1 and 2 months period. Again, this will depend of the industry the organization's is in, and it wont apply to hospitality and food retail since the expected holding inventory period for mentioned industries is way lower."
+    } else {
+        document.getElementById("inventory-feedback").innerHTML = "Your organization's Inventory holding Ratio is lower than 20 days, this is considered a fast holding inventory period, and it means that the organization is able to sell all the inventory and restock withing 1 month. It shows that the organization's most likely belogngs to an fast industry such as food reatil or hospitality."
+    }
+}
+
 /** Calculates the average period to settle trade receivables ratio in efficiency.html*/
 
 function calculateReceivables() {
@@ -197,6 +209,17 @@ function calculateReceivables() {
     t = parseFloat(operand20.value)
     let receivablesResult = document.getElementById("trade-settlement-result").value = (s / t) * 365;  
    }
+
+   const receivablesFeedback = () => {
+    let result8 = document.getElementById("trade-settlement-result");
+    hhh = parseFloat(result8.value)
+    if (hhh >= 40) {
+        document.getElementById("receivables-feedback").innerHTML = "Your organization's trade receivables settlement period is greater than 40 days, this is slighliest higher than the average. Again, this varies from one industry to another but you risk missing payments from credit sales.";
+    } else {
+        document.getElementById("receivables-feedback").innerHTML = "Your organization's trade receivables settlement period is lower than 40 days, this is within the average, and it means that the organization is able to turn its credit sales into cash within one month, again organization's within the hospitality or retail or food retail indrustry, normally presents the lowest trade receivable's settlement period with their number closer to 5 or 10 days."
+    }
+}
+
 
 /** Calculates the average period to settle trade payables ratio in efficiency.html*/
 
